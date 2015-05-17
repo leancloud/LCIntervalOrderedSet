@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		839AFEB61B079EF6008755CB /* LCIntervalOrderedSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 839AFEB51B079EF6008755CB /* LCIntervalOrderedSet.h */; };
+		839AFEB81B079EF6008755CB /* LCIntervalOrderedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 839AFEB71B079EF6008755CB /* LCIntervalOrderedSet.m */; };
+		839AFEBE1B079EF6008755CB /* libLCIntervalOrderedSet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839AFEB21B079EF6008755CB /* libLCIntervalOrderedSet.a */; };
+		839AFED41B08335A008755CB /* LCIntervalEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 839AFED31B08335A008755CB /* LCIntervalEndpoint.m */; };
+		839AFED81B083B85008755CB /* LCInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 839AFED71B083B85008755CB /* LCInterval.m */; };
+		839AFEDA1B08B396008755CB /* LCIntervalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839AFED91B08B396008755CB /* LCIntervalTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839AFEBF1B079EF6008755CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839AFEAA1B079EF6008755CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839AFEB11B079EF6008755CB;
+			remoteInfo = LCIntervalOrderedSet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		839AFEB01B079EF6008755CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				839AFEB61B079EF6008755CB /* LCIntervalOrderedSet.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		839AFEB21B079EF6008755CB /* libLCIntervalOrderedSet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLCIntervalOrderedSet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		839AFEB51B079EF6008755CB /* LCIntervalOrderedSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCIntervalOrderedSet.h; sourceTree = "<group>"; };
+		839AFEB71B079EF6008755CB /* LCIntervalOrderedSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCIntervalOrderedSet.m; sourceTree = "<group>"; };
+		839AFEBD1B079EF6008755CB /* LCIntervalOrderedSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCIntervalOrderedSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839AFEC31B079EF6008755CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839AFED21B08335A008755CB /* LCIntervalEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCIntervalEndpoint.h; sourceTree = "<group>"; };
+		839AFED31B08335A008755CB /* LCIntervalEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCIntervalEndpoint.m; sourceTree = "<group>"; };
+		839AFED61B083B85008755CB /* LCInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCInterval.h; sourceTree = "<group>"; };
+		839AFED71B083B85008755CB /* LCInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCInterval.m; sourceTree = "<group>"; };
+		839AFED91B08B396008755CB /* LCIntervalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCIntervalTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839AFEAF1B079EF6008755CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839AFEBA1B079EF6008755CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839AFEBE1B079EF6008755CB /* libLCIntervalOrderedSet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		839AFEA91B079EF6008755CB = {
+			isa = PBXGroup;
+			children = (
+				839AFEB41B079EF6008755CB /* LCIntervalOrderedSet */,
+				839AFEC11B079EF6008755CB /* LCIntervalOrderedSetTests */,
+				839AFEB31B079EF6008755CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		839AFEB31B079EF6008755CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839AFEB21B079EF6008755CB /* libLCIntervalOrderedSet.a */,
+				839AFEBD1B079EF6008755CB /* LCIntervalOrderedSetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839AFEB41B079EF6008755CB /* LCIntervalOrderedSet */ = {
+			isa = PBXGroup;
+			children = (
+				839AFED61B083B85008755CB /* LCInterval.h */,
+				839AFED71B083B85008755CB /* LCInterval.m */,
+				839AFED21B08335A008755CB /* LCIntervalEndpoint.h */,
+				839AFED31B08335A008755CB /* LCIntervalEndpoint.m */,
+				839AFEB51B079EF6008755CB /* LCIntervalOrderedSet.h */,
+				839AFEB71B079EF6008755CB /* LCIntervalOrderedSet.m */,
+			);
+			path = LCIntervalOrderedSet;
+			sourceTree = "<group>";
+		};
+		839AFEC11B079EF6008755CB /* LCIntervalOrderedSetTests */ = {
+			isa = PBXGroup;
+			children = (
+				839AFED91B08B396008755CB /* LCIntervalTests.m */,
+				839AFEC21B079EF6008755CB /* Supporting Files */,
+			);
+			path = LCIntervalOrderedSetTests;
+			sourceTree = "<group>";
+		};
+		839AFEC21B079EF6008755CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839AFEC31B079EF6008755CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839AFEB11B079EF6008755CB /* LCIntervalOrderedSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839AFEC61B079EF6008755CB /* Build configuration list for PBXNativeTarget "LCIntervalOrderedSet" */;
+			buildPhases = (
+				839AFEAE1B079EF6008755CB /* Sources */,
+				839AFEAF1B079EF6008755CB /* Frameworks */,
+				839AFEB01B079EF6008755CB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCIntervalOrderedSet;
+			productName = LCIntervalOrderedSet;
+			productReference = 839AFEB21B079EF6008755CB /* libLCIntervalOrderedSet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		839AFEBC1B079EF6008755CB /* LCIntervalOrderedSetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839AFEC91B079EF6008755CB /* Build configuration list for PBXNativeTarget "LCIntervalOrderedSetTests" */;
+			buildPhases = (
+				839AFEB91B079EF6008755CB /* Sources */,
+				839AFEBA1B079EF6008755CB /* Frameworks */,
+				839AFEBB1B079EF6008755CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839AFEC01B079EF6008755CB /* PBXTargetDependency */,
+			);
+			name = LCIntervalOrderedSetTests;
+			productName = LCIntervalOrderedSetTests;
+			productReference = 839AFEBD1B079EF6008755CB /* LCIntervalOrderedSetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839AFEAA1B079EF6008755CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = LeanCloud;
+				TargetAttributes = {
+					839AFEB11B079EF6008755CB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					839AFEBC1B079EF6008755CB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 839AFEAD1B079EF6008755CB /* Build configuration list for PBXProject "LCIntervalOrderedSet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 839AFEA91B079EF6008755CB;
+			productRefGroup = 839AFEB31B079EF6008755CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839AFEB11B079EF6008755CB /* LCIntervalOrderedSet */,
+				839AFEBC1B079EF6008755CB /* LCIntervalOrderedSetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839AFEBB1B079EF6008755CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839AFEAE1B079EF6008755CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839AFED81B083B85008755CB /* LCInterval.m in Sources */,
+				839AFED41B08335A008755CB /* LCIntervalEndpoint.m in Sources */,
+				839AFEB81B079EF6008755CB /* LCIntervalOrderedSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839AFEB91B079EF6008755CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839AFEDA1B08B396008755CB /* LCIntervalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839AFEC01B079EF6008755CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839AFEB11B079EF6008755CB /* LCIntervalOrderedSet */;
+			targetProxy = 839AFEBF1B079EF6008755CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		839AFEC41B079EF6008755CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		839AFEC51B079EF6008755CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839AFEC71B079EF6008755CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		839AFEC81B079EF6008755CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		839AFECA1B079EF6008755CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LCIntervalOrderedSetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		839AFECB1B079EF6008755CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LCIntervalOrderedSetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839AFEAD1B079EF6008755CB /* Build configuration list for PBXProject "LCIntervalOrderedSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839AFEC41B079EF6008755CB /* Debug */,
+				839AFEC51B079EF6008755CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839AFEC61B079EF6008755CB /* Build configuration list for PBXNativeTarget "LCIntervalOrderedSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839AFEC71B079EF6008755CB /* Debug */,
+				839AFEC81B079EF6008755CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839AFEC91B079EF6008755CB /* Build configuration list for PBXNativeTarget "LCIntervalOrderedSetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839AFECA1B079EF6008755CB /* Debug */,
+				839AFECB1B079EF6008755CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 839AFEAA1B079EF6008755CB /* Project object */;
+}
