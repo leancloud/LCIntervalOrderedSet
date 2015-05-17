@@ -128,6 +128,16 @@
     self.sortedIntervals = sortedIntervals;
 }
 
+- (BOOL)containInterval:(LCInterval *)interval {
+    for (LCInterval *subInterval in self.sortedIntervals) {
+        if ([subInterval contain:interval]) {
+            return YES;
+        }
+    }
+
+    return NO;
+}
+
 - (NSArray *)intervals {
     return [self.sortedIntervals copy];
 }

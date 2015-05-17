@@ -20,6 +20,7 @@
 @property (readonly) NSArray *endpoints;
 @property (readonly) BOOL empty;
 
+- (BOOL)contain:(LCInterval *)other;
 - (BOOL)isEqual:(LCInterval *)other;
 
 @end

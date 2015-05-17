@@ -27,6 +27,8 @@
  */
 - (void)unionInterval:(LCInterval *)interval;
 
+- (BOOL)containInterval:(LCInterval *)interval;
+
 - (NSArray *)intervals;
 
 @end

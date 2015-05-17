@@ -59,6 +59,17 @@
     return YES;
 }
 
+- (BOOL)contain:(LCInterval *)other {
+    if (self.lvalue <= other.lvalue && self.rvalue >= other.lvalue) {
+        if ((self.lvalue < other.lvalue || !(self.lopen && !other.lopen)) &&
+            (self.rvalue < other.rvalue || !(self.ropen && !other.ropen))) {
+            return YES;
+        }
+    }
+
+    return NO;
+}
+
 - (BOOL)isEqual:(LCInterval *)other {
     return (
         self.lvalue == other.lvalue &&

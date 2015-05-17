@@ -157,6 +157,18 @@
     XCTAssert(OK, @"Pass");
 }
 
+- (void)testMinusIntervals_3 {
+    LCIntervalOrderedSet *orderedSet = [[LCIntervalOrderedSet alloc] init];
+
+    [orderedSet minusInterval:LCIntervalMake(3, 4, YES, YES)];
+
+    NSArray *result = @[];
+
+    BOOL OK = [[orderedSet intervals] isEqualToArray:result];
+
+    XCTAssert(OK, @"Pass");
+}
+
 - (void)testArchivement_1 {
     LCInterval *interval = LCIntervalMake(1, 2, NO, NO);
 
@@ -177,6 +189,47 @@
     NSArray *newIntervals = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 
     BOOL OK = [intervals isEqualToArray:newIntervals];
+
+    XCTAssert(OK, @"Pass");
+}
+
+- (void)testContain_1 {
+    LCInterval *interval1 = LCIntervalMake(2, 5, YES, YES);
+    LCInterval *interval2 = LCIntervalMake(2, 5, YES, YES);
+
+    BOOL OK = [interval1 contain:interval2];
+
+    XCTAssert(OK, @"Pass");
+}
+
+- (void)testContain_2 {
+    LCInterval *interval1 = LCIntervalMake(2, 5, NO, YES);
+    LCInterval *interval2 = LCIntervalMake(2, 5, NO, YES);
+
+    BOOL OK = [interval1 contain:interval2];
+
+    XCTAssert(OK, @"Pass");
+}
+
+- (void)testContain_3 {
+    LCInterval *interval1 = LCIntervalMake(2, 5, YES, YES);
+    LCInterval *interval2 = LCIntervalMake(2, 5, NO, YES);
+
+    BOOL notOK = [interval1 contain:interval2];
+
+    XCTAssertFalse(notOK, @"Pass");
+}
+
+- (void)testContain_4 {
+    LCIntervalOrderedSet *orderedSet = [[LCIntervalOrderedSet alloc] init];
+
+    LCInterval *interval1 = LCIntervalMake(2, 5, NO, YES);
+
+    [orderedSet unionInterval:interval1];
+
+    LCInterval *interval2 = LCIntervalMake(2, 5, NO, YES);
+
+    BOOL OK = [interval1 contain:interval2];
 
     XCTAssert(OK, @"Pass");
 }
