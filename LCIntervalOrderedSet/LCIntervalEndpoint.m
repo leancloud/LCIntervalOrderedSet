@@ -45,6 +45,14 @@
     }
 }
 
+- (BOOL)isEqual:(LCIntervalEndpoint *)other {
+    return (
+        self.value == other.value &&
+        self.side  == other.side  &&
+        self.open  == other.open
+    );
+}
+
 - (instancetype)oppositeEndpoint {
     LCIntervalEndpointSide side = (
         self.side == LCIntervalEndpointSideLeft ?

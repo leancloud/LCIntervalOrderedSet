@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger, LCIntervalEndpointSide) {
 @property (assign) LCIntervalEndpointSide side;
 @property (assign) BOOL open;
 
+- (BOOL)isEqual:(LCIntervalEndpoint *)other;
+
 - (instancetype)oppositeEndpoint;
 
 @end

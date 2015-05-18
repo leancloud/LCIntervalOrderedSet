@@ -104,14 +104,42 @@
     [allEndpoints insertObject:[re oppositeEndpoint]
                        atIndex:[allEndpoints indexOfObject:re] + 1];
 
-    NSUInteger start = [allEndpoints indexOfObject:le];
-    NSUInteger end   = [allEndpoints indexOfObject:re];
+    NSUInteger start = [self firstIndexOfObject:le inArray:allEndpoints];
+    NSUInteger end   = [self lastIndexOfObject:re  inArray:allEndpoints];
 
     [allEndpoints removeObjectsInRange:NSMakeRange(start, end - start + 1)];
 
     NSMutableArray *sortedIntervals = [self sortedIntervalsFromEndpoints:allEndpoints];
 
     self.sortedIntervals = sortedIntervals;
+}
+
+- (NSUInteger)firstIndexOfObject:(id)object inArray:(NSArray *)array {
+    NSUInteger index = 0;
+
+    for (id element in array) {
+        if ([element isEqual:object]) {
+            return index;
+        }
+
+        index += 1;
+    }
+
+    return NSNotFound;
+}
+
+- (NSUInteger)lastIndexOfObject:(id)object inArray:(NSArray *)array {
+    NSUInteger index = [array count] - 1;
+
+    for (id element in array.reverseObjectEnumerator) {
+        if ([element isEqual:object]) {
+            return index;
+        }
+
+        index -= 1;
+    }
+
+    return NSNotFound;
 }
 
 - (void)unionInterval:(LCInterval *)interval {

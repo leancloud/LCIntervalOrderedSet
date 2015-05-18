@@ -169,6 +169,43 @@
     XCTAssert(OK, @"Pass");
 }
 
+- (void)testMinusIntervals_4 {
+    LCIntervalOrderedSet *orderedSet = [[LCIntervalOrderedSet alloc] init];
+
+    [orderedSet unionInterval:LCIntervalMake(0, 0, NO, NO)];
+    [orderedSet unionInterval:LCIntervalMake(1431081013310, 1431445421462, NO, NO)];
+    [orderedSet unionInterval:LCIntervalMake(1431484896980, 1431747522850, NO, NO)];
+    [orderedSet minusInterval:LCIntervalMake(0, 0, NO, NO)];
+
+    NSArray *result = [orderedSet intervals];
+
+    BOOL OK = [result isEqualToArray:@[
+        LCIntervalMake(1431081013310, 1431445421462, NO, NO),
+        LCIntervalMake(1431484896980, 1431747522850, NO, NO)
+    ]];
+
+    XCTAssert(OK, @"Pass");
+}
+
+- (void)testMinusIntervals_5 {
+    LCIntervalOrderedSet *orderedSet = [[LCIntervalOrderedSet alloc] init];
+
+    [orderedSet unionInterval:LCIntervalMake(0, 0, NO, NO)];
+    [orderedSet unionInterval:LCIntervalMake(3, 6, NO, NO)];
+    [orderedSet unionInterval:LCIntervalMake(20, 30, NO, NO)];
+    [orderedSet minusInterval:LCIntervalMake(5, 24, NO, NO)];
+
+    NSArray *result = [orderedSet intervals];
+
+    BOOL OK = [result isEqualToArray:@[
+        LCIntervalMake(0, 0, NO, NO),
+        LCIntervalMake(3, 5, NO, YES),
+        LCIntervalMake(24, 30, YES, NO)
+    ]];
+
+    XCTAssert(OK, @"Pass");
+}
+
 - (void)testArchivement_1 {
     LCInterval *interval = LCIntervalMake(1, 2, NO, NO);
 
